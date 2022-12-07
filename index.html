@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>QR Code Generator</title>
+	<link rel="shortcut icon" href="https://i.ibb.co/KFDQxfH/image.png"> <!-- Icon -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- defer attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed -->
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+	<div class="grid">
+		<h2>QR Code Generator</h2>
+		<center>
+			<img id="img" src="">
+		</center>
+		<div class="size-container">
+			<select id="size">
+				<option value="100">100 x 100</option>
+				<option value="150">150 x 150</option>
+				<option value="200">200 x 200</option>
+				<option value="250" selected>250 x 250</option>
+				<option value="300">300 x 300</option>
+				<option value="500">500 x 500</option>
+			</select>
+		</div>
+		<div class="input-data">
+			<textarea placeholder="Enter Your Text..." id="qrtext"></textarea>
+		</div>
+		<div class="submit-container">
+			<input type="submit" name="submit" value="Generate QR" onclick="genQR()">
+		</div>
+		<div class="download-container">
+			<input type="submit" id="downloadQR" value="Download QR" onclick="downloadQR()" disabled style="color: #d75821; background-color: white;">
+		</div>
+	</div>
+	<p>Developed by Shubhanshu Jha</p>
+</body>
+</html>
