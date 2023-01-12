@@ -1,4 +1,5 @@
 // const gchart_api = "https://chart.googleapis.com/chart?cht=qr&chs=";
+// chf->char format, value 'bg.s.65432100'->transparent background
 const gchart_api = 'https://chart.googleapis.com/chart?chf=bg.s.65432100&cht=qr&chs='
 const downloadQRButton = get('downloadQR')
 
